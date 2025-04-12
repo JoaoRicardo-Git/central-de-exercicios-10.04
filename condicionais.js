@@ -13,7 +13,7 @@ function exercicioCondicionais01() {
 
     }
 
-    gerarLog("Exercicio de maioridade executado no alert às " + new Date().toLocaleString())
+    gerarLog("Exercicio de maioridade executado às " + new Date().toLocaleString())
 }
 
 function exercicioCondicionais02() {
@@ -29,7 +29,7 @@ function exercicioCondicionais02() {
         alert("Número Negativo!")
 
     }
-    gerarLog("Exercicio de positivo ou negativo executado no alert às " + new Date().toLocaleString())
+    gerarLog("Exercicio de positivo ou negativo executado às " + new Date().toLocaleString())
 }
 
 function exercicioCondicionais03() {
@@ -45,7 +45,7 @@ function exercicioCondicionais03() {
         alert("Vou nem fala!")
 
     }
-    gerarLog("Exercicio de Aprovação executado no alert às " + new Date().toLocaleString())
+    gerarLog("Exercicio de Aprovação executado às " + new Date().toLocaleString())
 }
 
 function exercicioCondicionais04() {
@@ -68,7 +68,7 @@ function exercicioCondicionais04() {
 
         }
     }
-    gerarLog("Exercicio de Positivo, Negativo, É Zero executado no alert às " + new Date().toLocaleString())
+    gerarLog("Exercicio de Positivo, Negativo, É Zero executado às " + new Date().toLocaleString())
 }
 
 function exercicioCondicionais05() {
@@ -93,7 +93,7 @@ function exercicioCondicionais05() {
         }
 
     }
-    gerarLog("Exercicio de Classificação de idade executado no alert às " + new Date().toLocaleString())
+    gerarLog("Exercicio de Classificação de idade executado às " + new Date().toLocaleString())
 }
 
 function exercicioCondicionais06() {
@@ -109,22 +109,7 @@ function exercicioCondicionais06() {
         alert("numero ímpar")
 
     }
-    gerarLog("Exercicio de par ou ímpar executado no alert às " + new Date().toLocaleString())
 }
-
-function exercicioextra() {
-    let nota = prompt("Coloque sua nota:");
-
-    if (nota == 100) {
-        alert("Aprovado com distinção")
-    } else if (nota >= 60) {
-        alert("Aprovado");
-    } else {
-        alert("Desaprovado");
-    }
-    gerarLog("Exercicio extra executado no alert às " + new Date().toLocaleString())
-}
-
 
 function exercicioCondicionaisIntermediario01() {
 
@@ -148,29 +133,29 @@ function exercicioCondicionaisIntermediario01() {
 
         alert(num1 / num2)
 
-    // }
-
-    switch (operacao) {
-        case "+":
-            resutado = num1 + num2
-            break;
-        case "-":
-            resutado = num1 - num2
-            break;
-        case "*":
-            resutado = num1 * num2
-            break;
-        case "/":
-            resutado = num1 / num2
-            break;
-
-
-        default:
-            alert("Não Pode!")
-            break;
     }
 
-    gerarLog("Exercicio de Calculadora executada no alert às " + new Date().toLocaleString())
+    // switch (operacao) {
+    //     case "+":
+    //         resutado = num1 + num2
+    //         break;
+    //     case "-":
+    //         resutado = num1 - num2
+    //         break;
+    //     case "*":
+    //         resutado = num1 * num2
+    //         break;
+    //     case "/":
+    //         resutado = num1 / num2
+    //         break;
+
+
+    //     default:
+    //         alert("Não Pode!")
+    //         break;
+    // }
+
+    gerarLog("Exercicio de Calculadora executada às " + new Date().toLocaleString())
 
 }
 
@@ -194,60 +179,6 @@ function exercicioCondicionaisIntermediario02() {
 
 
     gerarLog("Exercicio de três números executado no alert às " + new Date().toLocaleString())
-}
-
-function exercicioCondicionaisIntermediario03() {
-
-    let valor = prompt("Qual o Valor da compra?:")
-    let desconto = (10)
-
-
-    if (valor >= 100) {
-
-        alert(valor - desconto)
-
-    } else {
-
-        alert(valor)
-    }
-
-    gerarLog("Exercicio de Desconto executado no alert às " + new Date().toLocaleString())
-
-}
-
-function exercicioCondicionaisIntermediario04() {
-
-    let usuario = prompt("Coloque o Usuário: ")
-    let senha = prompt("Coloque a Senha: ")
-
-    if (usuario === "admin" && senha === "1234") {
-        alert("Login Bem-sucedido");
-    } else {
-        alert("Acesso Negado");
-    }
-
-    gerarLog("Exercicio de Login executado no alert às " + new Date().toLocaleString())
-
-}
-
-function exercicioCondicionaisAvancado01() {
-
-    let nota = prompt("Coloque sua nota de 0 - 100: ");
-
-    if (nota >= 90) {
-        alert("A")
-    } else if (nota >= 80) {
-        alert("B")
-    } else if (nota >= 70) {
-        alert("C")
-    } else if (nota >= 60) {
-        alert("D")
-    } else {
-        alert("F")
-    }
-
-    gerarLog("Exercicio de Conversão para conceitos executado no alert às " + new Date().toLocaleString())
-
 }
 
 function gerarLog(textoDoLog) {
